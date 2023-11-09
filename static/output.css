@@ -1,0 +1,84 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: url("backgroundwall.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+.hero {
+  width: 90%;
+  border-radius: 8%;
+  margin: auto;
+}
+
+#rebekahpic {
+  margin: auto;
+  max-height: 400px;
+  border: goldenrod solid 2px;
+  border-radius: 4%;
+  margin-top: 20px;
+}
+
+.bg-base-200 {
+  --tw-bg-opacity: 0.8;
+}
+
+.frames-inside {
+  height: 90%;
+  /* border: 5px white solid; */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.frame {
+  position: relative;
+  text-align: center;
+  color: white;
+  filter: drop-shadow(5px 14px 10px #000000);
+  max-width: 40%;
+}
+
+.frame img {
+  position: relative;
+  z-index: 3;
+}
+
+.frame-contents {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 67%;
+  display: block;
+  flex-direction: column;
+  z-index: 2
+}
+
+.contents {
+  all: revert;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 67%;
+  height: 64%;
+  background-color: lightcyan;
+  margin: auto;
+  overflow-y: scroll;
+  z-index: 6;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: antiquewhite;
+}
