@@ -84,6 +84,7 @@ h2 {
     font-size: large;
 }
 
+/* FRAME CONTENTS */
 #contentsone {
     background-image: url('screenshotquiz.png');
     background-size: cover;
@@ -95,6 +96,8 @@ h2 {
 	flex-direction: row;
 	align-items: center;
     text-shadow: 1px 1px 2px black;
+
+    max-height: 188px;
 }
 
 #contentsone h2 {
@@ -124,6 +127,8 @@ h2 {
 	flex-direction: row;
 	align-items: center;
     text-shadow: 1px 1px 2px black;
+
+    max-height: 188px;
 }
 
 #contentstwo h2 {
@@ -143,6 +148,37 @@ h2 {
     opacity: 1
 }
 
+
+#contentsthree {
+    background-image: url('screenshotdcs.png');
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+    text-shadow: 1px 1px 2px black;
+
+    max-height: 188px;
+}
+
+#contentsthree h2 {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+
+#contentsthree:hover {
+    opacity: 0.8;
+}
+
+#contentsthree:hover h2 {
+    opacity: 1
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .frames-inside {
     height: 90%;
@@ -179,7 +215,9 @@ h2 {
     height: 67%;
     display: block;
     flex-direction: column;
-    z-index: 2
+    z-index: 2;
+
+    max-height: 189px;
 }
 
 .contents {
