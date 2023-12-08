@@ -85,6 +85,16 @@ h2 {
 }
 
 /* FRAME CONTENTS */
+.frame-contents a {
+    display: block;
+    box-sizing: content-box;
+}
+
+.contents h2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #contentsone {
     background-image: url('screenshotquiz.png');
     background-size: cover;
@@ -96,8 +106,6 @@ h2 {
 	flex-direction: row;
 	align-items: center;
     text-shadow: 1px 1px 2px black;
-
-    max-height: 188px;
 }
 
 #contentsone h2 {
@@ -127,8 +135,6 @@ h2 {
 	flex-direction: row;
 	align-items: center;
     text-shadow: 1px 1px 2px black;
-
-    max-height: 188px;
 }
 
 #contentstwo h2 {
@@ -160,8 +166,6 @@ h2 {
 	flex-direction: row;
 	align-items: center;
     text-shadow: 1px 1px 2px black;
-
-    max-height: 188px;
 }
 
 #contentsthree h2 {
@@ -196,8 +200,6 @@ h2 {
     text-align: center;
     color: white;
     filter: drop-shadow(5px 14px 10px #000000);
-    /* max-width: 40%; */
-    max-width: 350px;
 }
 
 .frame img {
@@ -215,9 +217,7 @@ h2 {
     height: 67%;
     display: block;
     flex-direction: column;
-    z-index: 2;
-
-    max-height: 189px;
+    z-index: 4;
 }
 
 .contents {
@@ -226,13 +226,12 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 67%;
-    height: 64%;
+    width: 100%;
+    height: 100%;
     background-color: lightcyan;
     margin: auto;
     /* overflow-y: scroll; */
     overflow-y: hidden;
-    z-index: 6;
 }
 
 h1 {
