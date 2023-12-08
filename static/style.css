@@ -186,8 +186,6 @@ h2 {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .frames-inside {
     height: 90%;
-    /* border: 5px white solid; */
-    /* overflow-y: auto; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -200,11 +198,17 @@ h2 {
     text-align: center;
     color: white;
     filter: drop-shadow(5px 14px 10px #000000);
-}
+
+    aspect-ratio: 4 / 3;
+    max-width: 400px;
+    max-height: 300px;
+    }
 
 .frame img {
     position: relative;
     z-index: 3;
+    width: 100%;
+    height: 100%;
 }
 
 .frame-contents {
