@@ -12,6 +12,18 @@ app.get("/", (req, res) => {
     res.render('index')
 });
 
+app.get("/dcs", (req, res) => {
+    res.render('dcs')
+});
+
+app.get("/larpquiz", (req, res) => {
+    res.render('larpquiz')
+});
+
+app.get("/lovettinc", (req, res) => {
+    res.render('lovettinc')
+});
+
 
 
 app.listen(PORT, () => {

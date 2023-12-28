@@ -361,3 +361,13 @@ header .navigation .menu {
 .cwlogo {
     margin-top: 2px;
 }
+
+.projectscreenshot {
+    border: solid goldenrod 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+li {
+    list-style: none;
+}
