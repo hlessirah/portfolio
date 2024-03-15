@@ -183,6 +183,36 @@ h2 {
 #contentsthree:hover h2 {
     opacity: 1
 }
+
+
+#contentsfour {
+    background-image: url('screenshotalliance.png');
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+#contentsfour h2 {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+
+#contentsfour:hover {
+    opacity: 0.8;
+}
+
+#contentsfour:hover h2 {
+    opacity: 1
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .frames-inside {
     height: 90%;
@@ -260,7 +290,7 @@ header{
     transition: 0.6s;
 }
 
-header .logo-img {
+/* header .logo-img {
     height: 60px;
 }
 
@@ -277,7 +307,7 @@ header .logo-img:hover {
     100%{
         transform: rotate(360deg);
     }
-} 
+}  */
 
 header .logo {
     color: white;

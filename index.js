@@ -24,6 +24,9 @@ app.get("/lovettinc", (req, res) => {
     res.render('lovettinc')
 });
 
+app.get("/alliance", (req, res) => {
+    res.render('alliance')
+});
 
 
 app.listen(PORT, () => {
