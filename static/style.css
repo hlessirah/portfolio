@@ -4,6 +4,8 @@
     box-sizing: border-box;
     /* font-family: sans-serif; */
     font-family: 'Mooli';
+    scrollbar-color: goldenrod darkred;
+    scrollbar-width: thin;
 }
 
 html, body {
@@ -41,6 +43,11 @@ h2 {
     width: 70%;
     padding: 20px;
     text-align: center;
+    /* NEW STYLING? */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: x-large;
 }
 
 .bodytext {
@@ -60,8 +67,9 @@ h2 {
 .rebekahpic {
     display: flex;
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    /* margin-top: 20px;
+    margin-bottom: 40px; */
+    width: 50%;
     max-width: 400px;
     border: goldenrod solid 5px;
     border-radius: 5%;
@@ -79,7 +87,7 @@ h2 {
 }
 
 .aboutme {
-    width: 80%;
+    width: 90%;
     margin: auto;
     font-size: large;
 }
@@ -221,6 +229,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .frame {
@@ -316,6 +325,10 @@ header .logo {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
+    transition: 500ms ease-in-out;
+}
+header .logo:hover {
+    color: goldenrod;
 }
 
 header .navigation {
@@ -400,4 +413,44 @@ header .navigation .menu {
 
 li {
     list-style: none;
+}
+
+#aboutskills {
+    margin-top: 10px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+#aboutheader {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .navigation a {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .aboutme {
+        font-size: medium;
+    }
+    #about {
+        width: 90%;
+    }
+    #bodytexttwo {
+        flex-direction: column;
+    }
+    .rebekahpic {
+        width: 80%;
+        margin-top: 20px;
+    }
+    #bodytexttwo {
+        font-size: large;
+    }
 }
