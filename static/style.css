@@ -11,6 +11,7 @@
 html, body {
     height: 100%;
     overflow-y: auto;
+    background-color: darkred;
 }
 
 body {
@@ -46,6 +47,7 @@ h2 {
     /* NEW STYLING? */
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     font-size: x-large;
 }
@@ -82,9 +84,6 @@ h2 {
 
 .rebekahpic {
     display: flex;
-    margin: auto;
-    /* margin-top: 20px;
-    margin-bottom: 40px; */
     width: 50%;
     max-width: 400px;
     border: goldenrod solid 5px;
@@ -469,4 +468,9 @@ li {
     #bodytexttwo {
         font-size: large;
     }
+    #bodytextthree {
+        font-size: large;
+    }
+    #aboutskills {
+        grid-template-columns: 1fr;
 }
