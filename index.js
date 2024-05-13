@@ -28,6 +28,10 @@ app.get("/alliance", (req, res) => {
     res.render('alliance')
 });
 
+app.get("/rumor", (req, res) => {
+    res.render('rumor')
+});
+
 
 app.listen(PORT, () => {
     console.log("Server is listening on port " + PORT)
